@@ -72,7 +72,34 @@ We will detail later what you can find in the extracted directories. For now, we
 
 # Getting started
 
-TBA
+You can save a lot of time later if you spend some time on setting up your FreeCAD environment. These are the steps we found useful.
+
+
+
+## Install third-party macros and workbenches
+
+Here is a set of macros and workbenches that we found useful during the development of the Mater project. Depending on your task at hand, the external tools to be installed will vary.
+
+### [Extension Manager](https://github.com/mnesarco/FreeCAD_ExtMan)
+
+This workbench contains more advanced tools than the built-in [*Addon manager*](https://wiki.freecadweb.org/Std_AddonMgr)m see also the [corresponding forum page](https://forum.freecadweb.org/viewtopic.php?t=50265). If you use a precompiled FreeCAD, its dependencies are already included. So you only need to clone the repository to directory of your FreeCAD settings:
+```bash
+cd ~/.FreeCAD/Mod
+git clone https://github.com/mnesarco/FreeCAD_ExtMan.git ExtMan
+```
+Once restarted FreeCAD, you can select the *Extension Manager* among the other workbenches. You can install all the other macros and workbenches we list below from within this tool.
+
+### [Curves](https://wiki.freecadweb.org/Curves_Workbench)
+
+This mature Python-based workbench is very useful for manipulating NURBS curves and surfaces. Highly recommended to be installed. You can browse information or address your own question on the [corresponding forum page](https://forum.freecadweb.org/viewtopic.php?f=8&t=22675). However, [*Curves* is meant to be used from the GUI](https://forum.freecadweb.org/viewtopic.php?f=3&t=22675&start=1020#p522718), not as a Python package.
+
+### [Lattice2](https://github.com/DeepSOIC/Lattice2)
+
+We used a single, but useful, feature of this workbench: [downgrade](https://github.com/DeepSOIC/Lattice2/wiki/Feature-Downgrade). A use case will be mentioned later in this guide.
+
+### [Launcher](https://github.com/triplus/Launcher)
+
+Don't remember where you can find a certain command, or want to access them faster than changing your current workbench and selecting them from the toolbar or from the menu? This little utility will make your workflow faster by restricting the choices via autocompletion. See the [corresponding forum page](https://forum.freecadweb.org/viewtopic.php?f=22&t=15564).
 
 
 
